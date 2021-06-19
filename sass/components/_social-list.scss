@@ -1,0 +1,19 @@
+.media-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  transition: background-color 250ms var(--timing-function),
+    color 250ms var(--timing-function), fill 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--white-color);
+  }
+}
+
+.team-contacts-link {
+  fill: var(--icon-color);
+}
