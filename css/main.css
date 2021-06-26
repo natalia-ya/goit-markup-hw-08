@@ -64,20 +64,49 @@ img {
 }
 
 .container {
-  width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .section {
-  padding: 94px 0;
+  padding: 60px 0;
 }
 
 .section-title {
-  margin-bottom: 50px;
-  font-size: 36px;
+  margin-bottom: 30px;
+  font-size: 28px;
   line-height: 1.17;
   text-align: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+  .section-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+  }
 }
 
 .btn {
@@ -528,10 +557,6 @@ textarea {
 
 .team {
   background: var(--btn-color);
-}
-
-.team-list {
-  display: flex;
 }
 
 .team-member {
