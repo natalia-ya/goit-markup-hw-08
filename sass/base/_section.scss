@@ -1,10 +1,22 @@
 .section {
-    padding: 94px 0;
-  }
+  padding: 60px 0;
+}
 
 .section-title {
+  margin-bottom: 30px;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+}
+
+// 1200+
+
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
+  .section-title {
     margin-bottom: 50px;
     font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
   }
+}
