@@ -20,7 +20,7 @@
 
   <body>
     <!-- Шапка сайту -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container header__container">
         <nav class="navigation">
           <a class="logo" href="./index.html" lang="en"
@@ -41,7 +41,7 @@
           </ul>
         </nav>
         <ul class="contacts list">
-          <li class="contacts__item menu__item">
+          <li class="contacts__item">
             <a class="contact__link link" href="mailto:info@devstudio.com">
               <svg class="contact__icon" width="18" height="16">
                 <use href="./images/icons.svg#icon-envelope"></use>
@@ -49,7 +49,7 @@
               info@devstudio.com
             </a>
           </li>
-          <li class="contacts__item menu__item">
+          <li class="contacts__item">
             <a class="contact__link link" href="tel:+380961111111">
               <svg class="contact__icon" width="16" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
@@ -58,8 +58,57 @@
             </a>
           </li>
         </ul>
+        <button data-menu-button class="mobile-menu-btn" type="button">
+          <svg class="mobile-menu-item">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+        <div class="mobile-menu mobile-menu.is-open" data-menu>
+          <div class="container mobile-menu__container">
+            <button class="modal-btn mobile-menu__close-btn" data-menu-close>
+              <svg
+                class="btn-icon mobile-menu__close-icon"
+                width="11"
+                height="11"
+              >
+                <use href="./images/icons.svg#icon-close-mobile"></use>
+              </svg>
+            </button>
+            <ul class="mobile-menu__nav list">
+              <li class="mobile-menu__item">
+                <a
+                  href="./index.html"
+                  class="mobile-menu__link mobile-menu__link--current link"
+                  >Студия</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="./portfolio.html" class="mobile-menu__link link"
+                  >Портфолио</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a href="" class="mobile-menu__link link">Контакты</a>
+              </li>
+            </ul>
+            <ul class="mobile-menu__contacts list">
+              <li class="mobile-menu__item">
+                <a href="tel:+380961111111" class="mobile-menu__tel link"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mobile-menu__item">
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="mobile-menu__email link"
+                  >info@devstudio.com</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </header> -->
+    </header>
 
     <main>
       <!-- Герой -->
@@ -130,49 +179,83 @@
       </section> -->
 
       <!-- Чем мы занимаемся -->
-      <!-- <section class="work section">
+      <section class="work section">
         <div class="container">
           <h2 class="work-title section-title">Чем мы занимаемся</h2>
           <ul class="servises list">
             <li class="servises__item">
-              <img
-                class="servises__img"
-                src="./images/studio/process1.jpg"
-                alt="процесс нашей работы"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/work/process-1.webp    1x,
+                    ./images/studio/work/process-1@2x.webp 2x
+                  "
+                  media="(mix-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/work/process-1.jpg    1x,
+                    ./images/studio/work/process-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img class="servises__img" src="#" alt="процесс нашей работы" />
+              </picture>
               <div class="servises__label">
                 <h3 class="servises__title">Десктопные приложения</h3>
               </div>
             </li>
             <li class="servises__item">
-              <img
-                class="servises__img"
-                src="./images/studio/process2.jpg"
-                alt="процесс нашей работы"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/work/process-2.webp    1x,
+                    ./images/studio/work/process-2@2x.webp 2x
+                  "
+                  media="(mix-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/work/process-2.jpg    1x,
+                    ./images/studio/work/process-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img class="servises__img" src="#" alt="процесс нашей работы" />
+              </picture>
+
               <div class="servises__label">
                 <h3 class="servises__title">Мобильные приложения</h3>
               </div>
             </li>
             <li class="servises__item">
-              <img
-                class="servises__img"
-                src="./images/studio/process3.jpg"
-                alt="процесс нашей работы"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/studio/work/process-3.webp    1x,
+                    ./images/studio/work/process-3@2x.webp 2x
+                  "
+                  media="(mix-width: 1200px)"
+                  type="image/webp"
+                />
+                <source
+                  srcset="
+                    ./images/studio/work/process-3.jpg    1x,
+                    ./images/studio/work/process-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img class="servises__img" src="#" alt="процесс нашей работы" />
+              </picture>
               <div class="servises__label">
                 <h3 class="servises__title">Дизайнерские решения</h3>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Команда -->
       <section class="team section">
@@ -850,5 +933,6 @@
       </div>
     </div> -->
     <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
