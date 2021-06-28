@@ -53,7 +53,7 @@ textarea {
 .form-input {
   margin: 0;
   padding: 11px 42px;
-  width: 448px;
+  width: 370px;
   height: 40px;
   border: 1px solid var(--input-color);
   box-sizing: border-box;
@@ -99,7 +99,7 @@ textarea {
 }
 
 .form-link {
-  margin-left: 7px;
+  margin-left: 4px;
   color: var(--accent-color);
 }
 
@@ -116,6 +116,7 @@ textarea {
   display: flex;
   align-items: center;
   justify-content: center;
+  font-size: 12px;
 }
 
 .policy {
@@ -129,4 +130,14 @@ textarea {
   top: 55%;
   left: 12px;
   transition: fill 250ms var(--timing-function);
+}
+
+@media screen and (min-width: 1200px) {
+  .form-input {
+    width: 448px;
+  }
+  .form-link {
+    margin-left: 7px;
+  }
+  
 }
