@@ -95,6 +95,10 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
+
+  .portfolio-item-img {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio-link {
