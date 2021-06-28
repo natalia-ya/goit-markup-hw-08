@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 767px) {
   .mobile-menu {
     position: fixed;
@@ -112,6 +113,23 @@ color: var(--accent-color);
     margin-right: 20px;
   }
 
+}
+
+@media screen and (max-width: 380px){
+  .mobile-menu__item {
+    font-size: 34px;
+  }
+  .mobile-menu__email {
+    font-size: 20px;
+  }
+
+  .mobile-menu__tel {
+    font-size: 28px;
+    color: var(--accent-color);
+  }
+  .mobile-menu__social-link {
+font-size: 14px;
+}
 }
 
 @media screen and (min-width: 768px) {
