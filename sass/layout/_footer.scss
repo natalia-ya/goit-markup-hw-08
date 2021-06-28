@@ -1,16 +1,7 @@
 .footer {
   background-color: var(--bg-color);
   padding: 60px 0;
-}
-
-.footer-wrapper {
-  display: flex;
-  align-items: baseline;
-}
-
-.footer-adress {
-  max-width: 230px;
-  margin-right: 70px;
+  text-align: center;
 }
 
 .footer-logo {
@@ -20,11 +11,15 @@
   margin-bottom: 20px;
 }
 
+.logo-part {
+  color: var(--accent-color);
+}
+
 .address-item {
   line-height: 1.71;
   font-style: normal;
   &:not(:last-child) {
-    margin-bottom: 9px;
+    margin-bottom: 8px;
   }
 }
 
@@ -37,8 +32,18 @@
   }
 }
 
+.address__link {
+  color: var(--second-text-color);
+  transition: color 250ms var(--timing-function);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
 .footer-media-list {
   display: flex;
+  justify-content: center;
 }
 
 .footer-media-title {
@@ -46,6 +51,7 @@
   text-transform: uppercase;
   line-height: 1.14;
   color: var(--white-color);
+  margin-top: 60px;
   margin-bottom: 20px;
 }
 
@@ -58,18 +64,14 @@
   margin-right: 10px;
 }
 
-.subscribe {
-  margin-left: 93px;
-}
-
-.subscribe-form {
-  display: flex;
+.subscribe-btn {
+  display: block;
 }
 
 .subscribe-input {
   padding-left: 16px;
   background-color: transparent;
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -77,8 +79,14 @@
   border-radius: 4px;
 }
 
+.subscribe-icon {
+  margin-left: 10px;
+}
+
 .subscribe-btn {
-  margin-left: 12px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 20px;
   display: flex;
   align-items: center;
   padding: 10px 28px;
@@ -97,6 +105,55 @@
   }
 }
 
-.subscribe-icon {
-  margin-left: 10px;
+@media screen and (min-width: 768px) {
+  .footer__contacts {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  .footer-media-title {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    text-align: start;
+  }
+  .footer-wrapper {
+    display: flex;
+    align-items: baseline;
+  }
+
+  .footer__contacts {
+    margin-bottom: 0;
+    align-items: baseline;
+  }
+
+  .subscribe-btn {
+    margin-top: 0;
+    margin-left: 12px;
+  }
+  .footer-adress {
+    max-width: 230px;
+    margin-right: 70px;
+  }
+
+  .address-item {
+    &:not(:last-child) {
+      margin-bottom: 9px;
+    }
+  }
+
+  .subscribe {
+    margin-left: 93px;
+  }
+
+  .subscribe-form {
+    display: flex;
+  }
+
+  .subscribe-input {
+    width: 358px;
+  }
 }
