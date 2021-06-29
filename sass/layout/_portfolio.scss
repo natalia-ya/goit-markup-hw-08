@@ -136,6 +136,9 @@
     padding: 94px 0;
   }
   .portfolio-item {
+      &:not(:last-child) {
+        margin-bottom: 0px;
+      }
     &:nth-child(odd) {
       margin-right: 0;
     }
